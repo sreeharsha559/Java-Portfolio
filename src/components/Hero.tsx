@@ -15,10 +15,10 @@ import { PROFILE } from "@/lib/data";
 import { scrollToId } from "@/lib/utils";
 
 const CHIPS = [
-  { icon: FaJava, label: "Java", className: "left-[-6%] top-[10%] sm:left-[-10%]", delay: "0s" },
-  { icon: SiSpringboot, label: "Spring Boot", className: "right-[-4%] top-[22%] sm:right-[-8%]", delay: "1.2s" },
-  { icon: FaReact, label: "React", className: "left-[-2%] bottom-[24%]", delay: "2s" },
-  { icon: SiKotlin, label: "Kotlin", className: "right-[-4%] bottom-[8%] sm:right-[-6%]", delay: "0.6s" },
+  { icon: FaJava, label: "Java", delay: "0s" },
+  { icon: SiSpringboot, label: "Spring Boot", delay: "1.2s" },
+  { icon: FaReact, label: "React", delay: "2s" }
+  // { icon: SiKotlin, label: "Kotlin", delay: "0.6s" },
 ];
 
 export function Hero() {
@@ -173,8 +173,12 @@ export function Hero() {
               </div>
             </motion.div>
 
-            {/* floating tech chips */}
-            <div ref={chipsRef} className="pointer-events-none absolute inset-0 z-20" aria-hidden>
+            {/* floating tech chips — centered row overlapping the photo's bottom edge */}
+            <div
+              ref={chipsRef}
+              className="pointer-events-none absolute inset-x-0 bottom-[10px] z-20 flex flex-wrap items-center justify-center gap-2 px-3 sm:bottom-[16px] sm:gap-3"
+              aria-hidden
+            >
               {CHIPS.map((chip, i) => {
                 const Icon = chip.icon;
                 return (
@@ -183,7 +187,6 @@ export function Hero() {
                     initial={{ opacity: 0, scale: 0.6 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.7 + i * 0.15, type: "spring", stiffness: 200, damping: 16 }}
-                    className={chip.className}
                   >
                     <div
                       className="animate-float backdrop-blur-md"
