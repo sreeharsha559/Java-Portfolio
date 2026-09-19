@@ -10,7 +10,7 @@ import { GitHubSectionLoader } from "@/components/GitHubSectionLoader";
 import { Contact } from "@/components/Contact";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "SreeHarsha",
   description: "Java Full Stack Developer building scalable web and mobile applications.",
 };
 
