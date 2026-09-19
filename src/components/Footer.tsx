@@ -43,7 +43,7 @@ export function Footer() {
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-ink-muted">Connect</p>
           <div className="mt-3 flex gap-3">
             <a
-              href={`https://${PROFILE.linkedin}`}
+              href={`https://www.linkedin.com/${PROFILE.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -77,7 +77,7 @@ export function Footer() {
       <div className="border-t border-white/[0.06]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-5 sm:px-8 md:flex-row">
           <p className="font-mono text-[11px] text-ink-muted">
-            © {new Date().getFullYear()} {PROFILE.name}. Crafted with Next.js, TypeScript &amp; intent.
+            © {new Date().getFullYear()} {PROFILE.name}.
           </p>
           <button
             type="button"

@@ -7,7 +7,15 @@
    - Network:      http://192.168.29.251:3000
 
  ✓ Starting...
- ✓ Ready in 7.6s
+ ✓ Ready in 4.9s
  ○ Compiling / ...
- ✓ Compiled / in 29.4s (1562 modules)
- GET / 200 in 36056ms
+ ✓ Compiled / in 72.1s (1589 modules)
+ GET / 200 in 77595ms
+ GET / 200 in 2392ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 5.1s (1567 modules)
+ GET /images/hero-portrait.webp 404 in 10001ms
+ GET / 200 in 154ms
+ GET /images/hero-portrait.png 404 in 193ms
+ ✓ Compiled in 20.2s (1567 modules)
+ GET / 200 in 399ms

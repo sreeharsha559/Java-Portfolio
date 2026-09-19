@@ -17,7 +17,7 @@ import { scrollToId } from "@/lib/utils";
 const CHIPS = [
   { icon: FaJava, label: "Java", delay: "0s" },
   { icon: SiSpringboot, label: "Spring Boot", delay: "1.2s" },
-  { icon: FaReact, label: "React", delay: "2s" }
+  { icon: FaReact, label: "React", delay: "2s" },
   // { icon: SiKotlin, label: "Kotlin", delay: "0.6s" },
 ];
 

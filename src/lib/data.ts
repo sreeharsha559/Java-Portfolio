@@ -279,7 +279,7 @@ export const ACHIEVEMENTS = [
     title: "National Hackathons",
     placement: "Team Leader",
     icon: "rocket",
-    note: "Captained cross-functional teams through 36-hour builds — product decisions, architecture, and demos.",
+    note: "Captained cross-functional teams through 24-hour builds — product decisions, architecture, and demos.",
     featured: false,
   },
   {
